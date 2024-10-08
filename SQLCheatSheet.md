@@ -1,6 +1,6 @@
 ## Intermediate SQL
-### SQL Cheat Sheet (video 15)
-You might have heard about the ACID and BASE principles. You need to know about them because it will allow you to design and implement database systems that meet the performance, scalability, availability, and consistency requirements of your applications effectively. 
+### SQL Cheat Sheet 
+You might have heard about the ACID and BASE principles. You need to know about them because it will allow you to design and implement database systems that meet the performance, scalability, availability, and consistency requirements of your applications effectively.
 
 ACID stands for Atomicity, Consistency, Isolation, and Durability. It's a set of properties that ensure reliability and consistency in database transactions.
 - Atomicity: Atomicity ensures that a transaction is treated as a single unit of work, which either fully completes or fully fails. In other words, if any part of the transaction fails, the entire transaction is rolled back to its original state. Imagine transferring money from one bank account to another. Atomicity ensures that if the withdrawal succeeds but the deposit fails, the entire transaction is rolled back to maintain the consistency of account balances.
@@ -29,9 +29,9 @@ When to Use BASE:
 
 In order to adhere to ACID principles when managing the create, update or delete transactions in a database, you could use the Transaction Control Language (TCL) commands in SQL. Here is how you can use the TCL commands practically when you want to execute a series of SQL statements as a single unit of work.
 
-- You start with the BEGIN TRANSACTION command to start a transaction such as update a record, insert a new record or delete the existing record. 
+- You start with the BEGIN TRANSACTION command to start a transaction such as update a record, insert a new record or delete the existing record.
 
-- It will be followed with the SQL statements that you want to execute. Finally, you conclude you SQL script  with the COMMIT command to commit the transactions to indicate to the database that if all the SQL statements within the transaction execute successfully, you want to make the changes permanent. 
+- It will be followed with the SQL statements that you want to execute. Finally, you conclude you SQL script  with the COMMIT command to commit the transactions to indicate to the database that if all the SQL statements within the transaction execute successfully, you want to make the changes permanent.
 
 - If an error occurs during the execution of the SQL statements or if you decide to discard the changes made in the transaction, you can use the ROLLBACK command to rollback the transaction.
 
